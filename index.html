@@ -3,212 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lubna's Collection | Bridal &amp; Formal Wear · Artesia, CA</title>
-  <meta name="description" content="Lubna's Collection in Artesia, California. Pakistani and Indian bridal, formal, and party wear. Visit our boutique on Pioneer Blvd in Little India." />
+  <title>Lubna's Collection — Bridal & Formal · Artesia</title>
+  <meta name="description" content="Lubna's Collection, Pioneer Blvd, Artesia. Pakistani and Indian bridal, formal, and party wear. Visit the boutique in Little India." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --ink: #0c0b09;
-      --gold: #c9a227;
-      --gold-soft: #e8d48b;
-      --cream: #f6efe3;
-      --muted: #8a8174;
-      --line: rgba(201, 162, 39, 0.28);
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: Outfit, system-ui, sans-serif; background: var(--ink); color: var(--cream); line-height: 1.6; }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    .wrap { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
-    header { position: fixed; inset: 0 0 auto 0; z-index: 40; backdrop-filter: blur(16px); background: linear-gradient(to bottom, rgba(12,11,9,.92), transparent); }
-    nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0 22px; }
-    .brand { font-family: "Cormorant Garamond", serif; letter-spacing: .18em; font-size: 15px; text-transform: uppercase; color: var(--gold-soft); }
-    .nav-links { display: flex; gap: 28px; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #d8d0c4; }
-    .nav-cta { border: 1px solid var(--gold); color: var(--gold-soft); padding: 8px 16px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; }
-    .hero { min-height: 100vh; display: grid; place-items: center; padding: 120px 0 80px; background: radial-gradient(ellipse at 20% 10%, rgba(201,162,39,.16), transparent 45%), var(--ink); }
-    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 60px; align-items: center; }
-    .kicker { font-size: 12px; letter-spacing: .32em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
-    h1 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: clamp(48px, 7vw, 86px); line-height: .92; color: #f4ead6; }
-    h1 em { font-style: italic; color: var(--gold-soft); display: block; }
-    .lead { margin-top: 24px; max-width: 460px; color: #cfc6b6; font-weight: 300; font-size: 17px; }
-    .hero-actions { display: flex; gap: 14px; margin-top: 36px; flex-wrap: wrap; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 26px; letter-spacing: .16em; text-transform: uppercase; font-size: 12px; border: 1px solid transparent; }
-    .btn-gold { background: var(--gold); color: var(--ink); font-weight: 600; }
-    .btn-ghost { border-color: var(--gold); color: var(--gold-soft); }
-    .callig img { width: min(520px, 100%); filter: drop-shadow(0 20px 50px rgba(201,162,39,.28)); }
-    .blessing { background: #14110e; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 28px 0; text-align: center; }
-    .script { font-family: "Great Vibes", cursive; font-size: clamp(32px, 5vw, 48px); color: var(--gold-soft); }
-    .blessing small { display: block; margin-top: 6px; letter-spacing: .22em; text-transform: uppercase; font-size: 11px; color: var(--muted); }
-    section { padding: 96px 0; }
-    h2 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: clamp(36px, 5vw, 56px); line-height: 1.05; color: #f4ead6; }
-    .about, .visit-grid, .hold { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
-    .about-card { background: #16130f; border: 1px solid var(--line); padding: 18px; }
-    .about-card img { width: 100%; height: 520px; object-fit: cover; object-position: center 20%; }
-    .eyebrow { color: var(--gold); letter-spacing: .28em; text-transform: uppercase; font-size: 11px; margin-bottom: 14px; }
-    p { color: #c8bfb0; font-weight: 300; }
-    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
-    .stat { border-top: 1px solid var(--line); padding-top: 14px; }
-    .stat b { display: block; font-family: "Cormorant Garamond", serif; font-size: 28px; color: var(--gold-soft); font-weight: 500; }
-    .stat span { font-size: 12px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
-    .collections { background: #100e0c; }
-    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 40px; }
-    .gallery { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
-    .tile { position: relative; overflow: hidden; background: #1a1612; min-height: 280px; }
-    .tile img { width: 100%; height: 100%; object-fit: cover; }
-    .tile .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 16px 14px; background: linear-gradient(transparent, rgba(8,7,5,.85)); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-soft); }
-    .t1 { grid-column: span 7; min-height: 520px; }
-    .t2 { grid-column: span 5; min-height: 520px; }
-    .t3, .t4, .t5 { grid-column: span 4; min-height: 360px; }
-    .t6 { grid-column: span 8; min-height: 420px; }
-    .t7 { grid-column: span 4; min-height: 420px; }
-    .ig-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
-    .ig-card { border: 1px solid var(--line); background: #16130f; padding: 22px; }
-    .ig-card h3 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 28px; color: #f4ead6; margin-bottom: 8px; }
-    .hold { background: #14110d; border: 1px solid var(--line); padding: 28px; }
-    .hold img { width: 100%; max-height: 420px; object-fit: contain; background: #ece6dc; }
-    .hold h3 { font-family: "Cormorant Garamond", serif; font-size: 42px; font-weight: 500; color: #f4ead6; }
-    .hours { list-style: none; margin-top: 20px; }
-    .hours li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(201,162,39,.14); color: #d4cbbd; }
-    .hours li span:last-child { color: var(--gold-soft); }
-    .contact-block { margin-top: 28px; }
-    .contact-block a { color: var(--gold-soft); }
-    .map iframe { width: 100%; height: 420px; border: 0; filter: grayscale(.35) contrast(1.05); }
-    footer { border-top: 1px solid var(--line); padding: 40px 0 28px; color: #9c9488; font-size: 13px; }
-    .foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-    @media (max-width: 900px) {
-      .nav-links { display: none; }
-      .hero-grid, .about, .visit-grid, .hold, .ig-grid { grid-template-columns: 1fr; }
-      .t1, .t2, .t3, .t4, .t5, .t6, .t7 { grid-column: span 12; min-height: 320px; }
+    :root { --ink:#0b0a08; --panel:#14110d; --gold:#c4a35a; --gold-2:#ead7a2; --ivory:#f3eadc; --mute:#9a9083; --line:rgba(196,163,90,.28); }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Outfit,system-ui,sans-serif; background:var(--ink); color:var(--ivory); }
+    img { display:block; max-width:100%; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1240px, calc(100% - 36px)); margin:0 auto; }
+    header { position:fixed; inset:0 0 auto; z-index:50; display:flex; justify-content:space-between; align-items:center; padding:18px 28px; background:linear-gradient(#0b0a08ee,#0b0a0800); }
+    .logo { font-family:"Cormorant Garamond",serif; font-size:22px; letter-spacing:.04em; font-weight:500; }
+    .logo i { font-style:italic; color:var(--gold-2); }
+    nav { display:flex; gap:26px; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:#d8d0c4; }
+    .phone { border:1px solid var(--gold); color:var(--gold-2); padding:8px 14px; font-size:11px; letter-spacing:.18em; text-transform:uppercase; }
+    .hero { position:relative; min-height:100vh; display:grid; grid-template-columns:1.15fr .85fr; }
+    .hero-photo { position:relative; min-height:100vh; overflow:hidden; }
+    .hero-photo img { width:100%; height:100%; object-fit:cover; object-position:30% 15%; min-height:100vh; }
+    .hero-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,transparent 40%,#0b0a08 100%),linear-gradient(to top,#0b0a08cc,transparent 40%); }
+    .hero-copy { display:flex; flex-direction:column; justify-content:center; padding:120px 48px 80px 36px; }
+    .kicker { color:var(--gold); letter-spacing:.34em; text-transform:uppercase; font-size:11px; margin-bottom:22px; }
+    h1 { font-family:"Cormorant Garamond",serif; font-weight:400; font-size:clamp(52px,7vw,92px); line-height:.9; color:#f7efdf; }
+    h1 em { font-style:italic; color:var(--gold-2); }
+    .hero-copy p { margin-top:26px; max-width:420px; color:#c9c0b2; font-weight:300; font-size:17px; line-height:1.65; }
+    .actions { display:flex; gap:12px; margin-top:34px; flex-wrap:wrap; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 22px; font-size:11px; letter-spacing:.2em; text-transform:uppercase; }
+    .btn-fill { background:var(--gold); color:#120f0a; font-weight:600; }
+    .btn-line { border:1px solid var(--gold); color:var(--gold-2); }
+    .mark { display:flex; align-items:center; justify-content:center; gap:28px; padding:22px 16px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:#100e0b; }
+    .mark img { height:54px; width:auto; }
+    .mark span { font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:var(--mute); }
+    section { padding:92px 0; }
+    .eyebrow { color:var(--gold); letter-spacing:.28em; text-transform:uppercase; font-size:11px; margin-bottom:12px; }
+    h2 { font-family:"Cormorant Garamond",serif; font-weight:400; font-size:clamp(36px,5vw,58px); line-height:1; color:#f6eedf; }
+    .split { display:grid; grid-template-columns:.95fr 1.05fr; gap:64px; align-items:center; }
+    .frame { border:1px solid var(--line); padding:14px; background:var(--panel); }
+    .frame img { width:100%; height:560px; object-fit:cover; }
+    .copy p { margin-top:18px; color:#c6bdae; font-weight:300; max-width:500px; line-height:1.7; }
+    .pills { display:flex; gap:10px; flex-wrap:wrap; margin-top:28px; }
+    .pill { border:1px solid var(--line); padding:8px 12px; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-2); }
+    .lookbook { background:#0f0d0b; }
+    .look-head { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:36px; }
+    .look-head p { max-width:380px; color:#b7aea0; font-weight:300; }
+    .grid { display:grid; grid-template-columns:1.4fr 1fr 1fr; grid-template-rows:420px 280px; gap:12px; }
+    .cell { position:relative; overflow:hidden; background:#1a1612; }
+    .cell img { width:100%; height:100%; object-fit:cover; transition:transform .8s ease; }
+    .cell:hover img { transform:scale(1.05); }
+    .cell span { position:absolute; left:0; right:0; bottom:0; padding:16px; background:linear-gradient(transparent,#000c); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-2); }
+    .c1 { grid-row:1 / 3; }
+    .c2 { grid-column:2 / 4; }
+    .detail { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+    .detail figure { background:var(--panel); border:1px solid var(--line); }
+    .detail img { width:100%; height:340px; object-fit:cover; }
+    .detail figcaption { padding:14px 16px; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold-2); }
+    .visit { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+    .hours { list-style:none; margin:26px 0; }
+    .hours li { display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid rgba(196,163,90,.16); color:#d2c8ba; }
+    .hours b { color:var(--gold-2); font-weight:500; }
+    .map iframe { width:100%; height:100%; min-height:440px; border:0; filter:grayscale(.4) contrast(1.08) saturate(.75); }
+    footer { border-top:1px solid var(--line); padding:28px 0 36px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; color:var(--mute); font-size:12px; }
+    footer img { height:36px; opacity:.9; }
+    @media (max-width:900px) {
+      nav { display:none; }
+      .hero,.split,.visit,.detail,.grid { grid-template-columns:1fr; }
+      .hero { min-height:auto; }
+      .hero-photo,.hero-photo img { min-height:62vh; }
+      .hero-copy { padding:40px 8px 56px; }
+      .c1,.c2 { grid-column:auto; grid-row:auto; height:340px; }
+      .grid { grid-template-rows:none; }
+      .frame img { height:380px; }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <nav>
-        <a class="brand" href="#">Lubna's Collection</a>
-        <div class="nav-links">
-          <a href="#about">The House</a>
-          <a href="#gallery">Collection</a>
-          <a href="#visit">Visit</a>
-        </div>
-        <a class="nav-cta" href="tel:+13106148237">Call the Boutique</a>
-      </nav>
-    </div>
+    <a class="logo" href="#">Lubna’s <i>Collection</i></a>
+    <nav>
+      <a href="#house">The House</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="phone" href="tel:+13106148237">(310) 614-8237</a>
   </header>
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="kicker">Little India · Artesia, California</div>
-        <h1>Bridal &amp; formal<br /><em>for the moment that matters.</em></h1>
-        <p class="lead">A United States house of chic bridal and formal wear — Pakistani and Indian silhouettes for weddings, Eid, and every celebration in between.</p>
-        <div class="hero-actions">
-          <a class="btn btn-gold" href="#gallery">View the Collection</a>
-          <a class="btn btn-ghost" href="#visit">Visit Pioneer Blvd</a>
-        </div>
-      </div>
-      <div class="callig">
-        <img src="https://lubnascollectionsartesia.lovable.app/__l5e/assets-v1/81125bab-8628-4770-9a5a-deb612c78ca5/mashallah-calligraphy.png" alt="Mashallah in gold Arabic calligraphy" />
+    <div class="hero-photo">
+      <img src="https://lubnascollectionsartesia.lovable.app/assets/lubnas-hero-rG6xmSrk.jpg" alt="Emerald formal with antique gold embroidery" />
+    </div>
+    <div class="hero-copy">
+      <div class="kicker">Pioneer Blvd · Little India · Artesia</div>
+      <h1>Bridal and formal<br /><em>cut for the occasion.</em></h1>
+      <p>A United States boutique of Pakistani and Indian bridal, formal, and party wear. Heavy work when the night asks for it. Clean silk when it doesn’t.</p>
+      <div class="actions">
+        <a class="btn btn-fill" href="#lookbook">See the lookbook</a>
+        <a class="btn btn-line" href="https://www.instagram.com/lubnas_collection310/" target="_blank" rel="noopener">@lubnas_collection310</a>
       </div>
     </div>
   </section>
-  <div class="blessing">
-    <div class="wrap">
-      <div class="script">Fi Amanillah</div>
-      <small>In the protection of Allah · When the heart breaks, but Allah holds it</small>
-    </div>
+  <div class="mark">
+    <img src="https://lubnascollectionsartesia.lovable.app/__l5e/assets-v1/81125bab-8628-4770-9a5a-deb612c78ca5/mashallah-calligraphy.png" alt="Mashallah" />
+    <span>Mashallah · the house blessing</span>
   </div>
-  <section id="about">
-    <div class="wrap about">
-      <div class="about-card">
-        <img src="https://lubnascollectionsartesia.lovable.app/assets/lubnas-hero-rG6xmSrk.jpg" alt="Emerald formal gown with antique gold embroidery" />
+  <section id="house">
+    <div class="wrap split">
+      <div class="frame">
+        <img src="https://lubnascollectionsartesia.lovable.app/assets/rose-kaftan-BZ7sxAr1.jpg" alt="Desert rose embroidered formal" />
       </div>
-      <div>
+      <div class="copy">
         <div class="eyebrow">The House</div>
-        <h2>Clothes that carry the occasion.</h2>
-        <p>Lubna's Collection sits on Pioneer Boulevard in Artesia's Little India. Pakistani and Indian bridal, formal, and party wear. Quality fabric, honest pricing, no hard sell.</p>
-        <div class="stats">
-          <div class="stat"><b>Bridal</b><span>Lehenga · sharara · formal</span></div>
-          <div class="stat"><b>Party</b><span>Embroidered three-piece</span></div>
-          <div class="stat"><b>Everyday</b><span>Pret · silk · festive</span></div>
+        <h2>A floor built for weddings, not windows.</h2>
+        <p>Lubna’s Collection sits at 18604 Pioneer Boulevard in Artesia. Guests come for Pakistani and Indian pieces they can try on — bridal, formal, party — and for a shop that will tell them the truth about a fabric and a fit.</p>
+        <p>Reviews keep saying the same thing: the clothes hold up, the prices are honest, Lubna is not pushy. That is the business.</p>
+        <div class="pills">
+          <span class="pill">Bridal</span><span class="pill">Formal</span><span class="pill">Party / Sharara</span><span class="pill">Silk pret</span>
         </div>
       </div>
     </div>
   </section>
-  <section class="collections" id="gallery">
+  <section class="lookbook" id="lookbook">
     <div class="wrap">
-      <div class="section-head">
+      <div class="look-head">
         <div>
-          <div class="eyebrow">The Collection</div>
-          <h2>What we dress you in.</h2>
+          <div class="eyebrow">Lookbook</div>
+          <h2>The way the clothes sit.</h2>
         </div>
-        <p>Bridal and formal looks. Then come try pieces on in Artesia.</p>
+        <p>Editorial for the mood of the house. Current pieces live on Instagram — ask in-store what is on the rack this week.</p>
       </div>
-      <div class="gallery">
-        <figure class="tile t1"><img src="https://lubnascollectionsartesia.lovable.app/assets/lubnas-hero-rG6xmSrk.jpg" alt="Emerald formal gown" /><figcaption class="cap">Formal · Emerald</figcaption></figure>
-        <figure class="tile t2"><img src="https://lubnascollectionsartesia.lovable.app/assets/rose-kaftan-BZ7sxAr1.jpg" alt="Desert rose kaftan" /><figcaption class="cap">A study in rose</figcaption></figure>
-        <figure class="tile t3"><img src="https://lubnascollectionsartesia.lovable.app/assets/zardozi-detail-CJLrYRiJ.jpg" alt="Zardozi detail" /><figcaption class="cap">The art of detail</figcaption></figure>
-        <figure class="tile t4"><img src="https://lubnascollectionsartesia.lovable.app/assets/silk-layers-BZ_dGiMY.jpg" alt="Silk layers" /><figcaption class="cap">Layers of light</figcaption></figure>
-        <figure class="tile t5"><img src="https://lubnascollectionsartesia.lovable.app/assets/social-teal-CC_1dltR.jpg" alt="Teal formal" /><figcaption class="cap">Formal · Teal</figcaption></figure>
-        <figure class="tile t6"><img src="https://lubnascollectionsartesia.lovable.app/assets/social-magenta-DuUZRZT4.jpg" alt="Magenta formal" /><figcaption class="cap">Formal · Magenta</figcaption></figure>
-        <figure class="tile t7"><img src="https://lubnascollectionsartesia.lovable.app/assets/social-details-DKlKddjg.jpg" alt="Surface work" /><figcaption class="cap">Surface work</figcaption></figure>
-      </div>
-      <div class="ig-grid">
-        <div class="ig-card">
-          <div class="eyebrow">On the floor now</div>
-          <h3>Maroon floral sharara</h3>
-          <p>Georgette kurta, sharara and dupatta. Mirror work and thread embroidery. Posted on @lubnas_collection310.</p>
-          <a class="btn btn-ghost" href="https://www.instagram.com/p/DR508hNibvO/" target="_blank" rel="noopener">See this piece on Instagram</a>
-        </div>
-        <div class="ig-card">
-          <div class="eyebrow">Live feed</div>
-          <h3>@lubnas_collection310</h3>
-          <p>Current pieces live on Instagram.</p>
-          <a class="btn btn-gold" href="https://www.instagram.com/lubnas_collection310/" target="_blank" rel="noopener">Open Instagram</a>
-        </div>
+      <div class="grid">
+        <a class="cell c1" href="https://www.instagram.com/lubnas_collection310/" target="_blank" rel="noopener">
+          <img src="https://lubnascollectionsartesia.lovable.app/assets/lubnas-hero-rG6xmSrk.jpg" alt="Emerald antique gold formal" /><span>Emerald formal</span>
+        </a>
+        <a class="cell c2" href="https://www.instagram.com/lubnas_collection310/" target="_blank" rel="noopener">
+          <img src="https://lubnascollectionsartesia.lovable.app/assets/silk-layers-BZ_dGiMY.jpg" alt="Layered embroidered dupattas" /><span>Layers of light</span>
+        </a>
+        <a class="cell" href="https://www.instagram.com/p/DR508hNibvO/" target="_blank" rel="noopener">
+          <img src="https://lubnascollectionsartesia.lovable.app/assets/social-teal-CC_1dltR.jpg" alt="Teal embroidered formal" /><span>Teal formal</span>
+        </a>
+        <a class="cell" href="https://www.instagram.com/lubnas_collection310/" target="_blank" rel="noopener">
+          <img src="https://lubnascollectionsartesia.lovable.app/assets/social-magenta-DuUZRZT4.jpg" alt="Magenta embroidered formal" /><span>Magenta formal</span>
+        </a>
       </div>
     </div>
   </section>
   <section>
     <div class="wrap">
-      <div class="hold">
-        <img src="https://lubnascollectionsartesia.lovable.app/__l5e/assets-v1/a2145fe5-9158-49c6-82ec-6c90d5024eb2/fi-amanillah-flower.png" alt="Fi Amanillah" />
-        <div>
-          <div class="eyebrow">A blessing on the house</div>
-          <h3>Fi Amanillah</h3>
-          <p>When the heart breaks, but Allah holds it.</p>
-        </div>
+      <div class="eyebrow">The work</div>
+      <h2 style="margin-bottom:28px;">Close enough to see the thread.</h2>
+      <div class="detail">
+        <figure>
+          <img src="https://lubnascollectionsartesia.lovable.app/assets/zardozi-detail-CJLrYRiJ.jpg" alt="Antique gold floral embroidery" />
+          <figcaption>Zardozi · ivory ground</figcaption>
+        </figure>
+        <figure>
+          <img src="https://lubnascollectionsartesia.lovable.app/assets/social-details-DKlKddjg.jpg" alt="Emerald embroidered accessories" />
+          <figcaption>Surface work</figcaption>
+        </figure>
+        <figure>
+          <img src="https://lubnascollectionsartesia.lovable.app/assets/rose-kaftan-BZ7sxAr1.jpg" alt="Rose formal kaftan" />
+          <figcaption>Rose formal</figcaption>
+        </figure>
       </div>
     </div>
   </section>
   <section id="visit">
-    <div class="wrap visit-grid">
+    <div class="wrap visit">
       <div>
         <div class="eyebrow">Visit</div>
         <h2>18604 Pioneer Blvd<br />Artesia, CA 90701</h2>
+        <p style="margin-top:16px;color:#c6bdae;font-weight:300;max-width:460px;">Little India. Same stretch as the spice shops and sari houses. Come for a fitting.</p>
         <ul class="hours">
-          <li><span>Monday</span><span>Closed</span></li>
-          <li><span>Tuesday – Sunday</span><span>11:30 AM – 8:30 PM</span></li>
+          <li><span>Monday</span><b>Closed</b></li>
+          <li><span>Tuesday – Sunday</span><b>11:30 AM – 8:30 PM</b></li>
         </ul>
-        <div class="contact-block">
-          <p><a href="tel:+13106148237">(310) 614-8237</a></p>
-          <p><a href="https://www.instagram.com/lubnas_collection310/">@lubnas_collection310</a></p>
-          <p style="margin-top:18px;"><a class="btn btn-gold" href="https://maps.google.com/?q=18604+Pioneer+Blvd+Artesia+CA+90701" target="_blank" rel="noopener">Get Directions</a></p>
+        <div class="actions">
+          <a class="btn btn-fill" href="tel:+13106148237">Call (310) 614-8237</a>
+          <a class="btn btn-line" href="https://maps.google.com/?q=18604+Pioneer+Blvd+Artesia+CA+90701" target="_blank" rel="noopener">Directions</a>
         </div>
       </div>
       <div class="map">
-        <iframe title="Map" src="https://www.google.com/maps?q=18604+Pioneer+Blvd,+Artesia,+CA+90701&output=embed"></iframe>
+        <iframe title="Map of Lubna's Collection" loading="lazy" src="https://www.google.com/maps?q=18604+Pioneer+Blvd,+Artesia,+CA+90701&output=embed"></iframe>
       </div>
     </div>
   </section>
-  <footer>
-    <div class="wrap foot">
-      <div class="brand">Lubna's Collection</div>
-      <div>18604 Pioneer Blvd, Artesia, CA 90701 · (310) 614-8237</div>
-    </div>
-  </footer>
+  <div class="wrap">
+    <footer>
+      <div>Lubna’s Collection · Pioneer Blvd, Artesia</div>
+      <img src="https://lubnascollectionsartesia.lovable.app/__l5e/assets-v1/a2145fe5-9158-49c6-82ec-6c90d5024eb2/fi-amanillah-flower.png" alt="Fi Amanillah" />
+      <div>Mashallah · Fi Amanillah</div>
+    </footer>
+  </div>
 </body>
 </html>
